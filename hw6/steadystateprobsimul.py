@@ -1,3 +1,7 @@
+################################################################################
+# Everett Berry (working with Jim Moss)                                        #
+# IE 336 HW 6 Problems 3 & 4                                                   #
+################################################################################
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -18,18 +22,28 @@ case3 = np.mat([[0, 0.5, 0, 0.5],
                 [0.3, 0, 0.7, 0]])
 
 # Symmetric matrix
-caseBONUS1 = np.mat([[0, 0, 0.2, 0.8],
+case4_BONUS = np.mat([[0, 0, 0.2, 0.8],
                      [0.7, 0, 0, 0.3],
                      [0.3, 0, 0, 0.7],
                      [0.8, 0.2, 0, 0]])
 
 # Kind of identity matrix
-caseBONUS2 = np.mat([[0.9, 0, 0, 0.1],
+case5_BONUS = np.mat([[0.9, 0, 0, 0.1],
                      [0, 0.9, 0, 0.1],
                      [0, 0, 0.9, 0.1],
                      [0.1, 0, 0, 0.9]])
 
-cases = [case1, case2, case3, caseBONUS1, caseBONUS2]
+case6_PROBLEM4 = np.mat([
+    [0.729, 0.081, 0.081, 0.081, 0.009, 0.009, 0.009, 0.001],
+    [0.81, 0, 0.09, 0.09, 0, 0, 0.01, 0],
+    [0.81, 0.09, 0, 0.09, 0, 0.01, 0, 0],
+    [0.81, 0.09, 0.09, 0, 0.01, 0, 0, 0],
+    [0, 0.9, 0, 0, 0, 0.1, 0, 0],
+    [0, 0.9, 0, 0, 0.1, 0, 0, 0],
+    [0, 0, 0.9, 0, 0.1, 0, 0, 0],
+    [0, 0, 0, 0, 1, 0, 0, 0]])
+
+cases = [case1, case2, case3, case4_BONUS, case5_BONUS, case6_PROBLEM4]
 
 
 def trans_prob_simul():
